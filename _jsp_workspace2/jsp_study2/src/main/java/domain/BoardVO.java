@@ -10,6 +10,8 @@ public class BoardVO {
 	private String moddate;
 	private int readcount;
 	
+	private String myList;
+	
 //생성자
 	public BoardVO() {}
 	
@@ -35,7 +37,7 @@ public class BoardVO {
 	}
 	//detail : 전부다 
 	public BoardVO(int bno, String title, String writer, String content, String regdate, String moddate,
-			int readcount) {
+			int readcount,String myList) {
 		this.bno = bno;
 		this.title = title;
 		this.writer = writer;
@@ -43,6 +45,7 @@ public class BoardVO {
 		this.regdate = regdate;
 		this.moddate = moddate;
 		this.readcount = readcount;
+		this.myList=myList;
 	}
 	
 	
@@ -103,8 +106,17 @@ public class BoardVO {
 	public void setReadcount(int readcount) {
 		this.readcount = readcount;
 	}
+	
+	
+//public String getMyList() {
+//		return myList;
+//	}
+//
+//	public void setMyList(String myList) {
+//		this.myList = myList;
+//	}
 
-//toString
+	//toString
 	@Override
 	public String toString() {
 		return "BoardVO [bno=" + bno + ", title=" + title + ", writer=" + writer + ", content=" + content + ", regdate="

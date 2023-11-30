@@ -44,5 +44,12 @@ public class BoardServiceImpl implements BoardService {
 		
 		return bdao.delete(bno);
 	}
+	@Override
+	public List<BoardVO> chList(String id) {
+		// TODO Auto-generated method stub
+		return bdao.selectList(id);
+	}
+	
+
 
 }

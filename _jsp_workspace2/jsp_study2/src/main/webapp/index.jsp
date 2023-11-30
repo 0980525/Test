@@ -26,6 +26,7 @@ PW : <input type="password" name="pwd" placeholder="Password">
 		<a href="/memb/list"><button>회원 리스트</button></a>
 		<a href="/memb/logout"><button>로그아웃</button></a>
 		<a href="/brd/register"><button>글쓰기 페이지로 이동</button></a>
+		<a href="/brd/mylist"><button>내가 쓴 게시글</button></a>
 	</c:if>
 
 </div>

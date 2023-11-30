@@ -19,8 +19,13 @@
   <delete id="del" parameterType="bvo">
   	delete from board where bno=#{bno}
   </delete>
+<!--   <select id="mylist" parameterType="id" resultType="String">
   
-  
+  select *from board where id=#{id}
+  </select> -->
+   <select id="mylist" parameterType="String" resultType="bvo">
+  	select * from board where writer=#{ses.id}
+  </select>
   
   
   

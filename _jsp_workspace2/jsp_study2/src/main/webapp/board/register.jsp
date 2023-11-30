@@ -17,6 +17,6 @@
 <textarea rows="10" cols="30" name="content"></textarea><br>
 <button type="submit">전송</button>
 </form>
-<a href="/borad/list.jsp"><button type="button">리스트로 가기</button></a>
+<a href="/board/list.jsp"><button type="button">리스트로 가기</button></a>
 </body>
 </html>

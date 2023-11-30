@@ -17,4 +17,8 @@ public interface BoardService {
 
 	int remove(int bno);
 
+	List<BoardVO> chList(String id);
+
+	
+
 }

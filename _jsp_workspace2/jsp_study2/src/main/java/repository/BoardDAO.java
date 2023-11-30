@@ -16,4 +16,7 @@ public interface BoardDAO {
 
 	int delete(int bno);
 
+	List<BoardVO> selectList(String id);
+
+
 }
