@@ -3,7 +3,7 @@ package domain;
 public class MemberVO {
 
 	private String id;
-	private String pw;
+	private String pwd;
 	private String email;
 	private int age;
 	private String regdate;
@@ -11,20 +11,20 @@ public class MemberVO {
 	
 	public MemberVO() {}
 	//login : id,pw
-	public MemberVO(String id,String pw) {
+	public MemberVO(String id,String pwd) {
 		this.id=id;
-		this.pw=pw;
+		this.pwd=pwd;
 	}
 	//join, modify : id, pw,email,age
-	public MemberVO(String id,String pw,String email,int age) {
+	public MemberVO(String id,String pwd,String email,int age) {
 		this.id=id;
-		this.pw=pw;
+		this.pwd=pwd;
 		this.email=email;
 		this.age=age;
 	}
 	//전체
-	public MemberVO(String id,String pw,String email,int age,String regdate,String lastlogin) {
-		this(id,pw,email,age);
+	public MemberVO(String id,String pwd,String email,int age,String regdate,String lastlogin) {
+		this(id,pwd,email,age);
 		this.regdate=regdate;
 		this.lastlogin=lastlogin;
 	}
@@ -34,11 +34,11 @@ public class MemberVO {
 	public void setId(String id) {
 		this.id = id;
 	}
-	public String getPw() {
-		return pw;
+	public String getPwd() {
+		return pwd;
 	}
-	public void setPw(String pw) {
-		this.pw = pw;
+	public void setPwd(String pwd) {
+		this.pwd = pwd;
 	}
 	public String getEmail() {
 		return email;
@@ -66,7 +66,7 @@ public class MemberVO {
 	}
 	@Override
 	public String toString() {
-		return "MemberVO [id=" + id + ", pw=" + pw + ", email=" + email + ", age=" + age + ", regdate=" + regdate
+		return "MemberVO [id=" + id + ", pwd=" + pwd + ", email=" + email + ", age=" + age + ", regdate=" + regdate
 				+ ", lastlogin=" + lastlogin + "]";
 	}
 	
